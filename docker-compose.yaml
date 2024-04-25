@@ -3,9 +3,9 @@ version: '3'
 services:
   balances:
     build:
-      dockerfile: ./src/main/docker/Dockerfile.multistage
+      dockerfile: ./src/main/docker/Dockerfile.jvm.multistage
       context: ./balances-microservice/.
-    image: balances-microservice:1.0.0
+    image: balances-microservice:1.0.0-jvm
     platform: linux/amd64
     ports:
       - 4000:8080
